@@ -14,7 +14,7 @@ def operation
   say "Available operations"
   puts "[1] + [2] - [3] * [4] /"
   say "Please the number of the operation you want to perform: "
-  input = gets.chomp
+  gets.chomp
 end
 
 def calculate(numbers, operator)
