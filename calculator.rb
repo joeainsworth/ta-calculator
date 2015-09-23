@@ -3,7 +3,7 @@ def say(msg)
 end
 
 def validate_number(input)
-  return input if input.to_s =~ /[0-9]/
+  input =~ /[0-9]/
 end
 
 def retrieve_number(number, numbers)
@@ -42,7 +42,7 @@ def calculate(numbers, operator)
   when 3
     numbers.first.to_i * numbers.last.to_i
   when 4
-    numbers.first.to_f / numbers.last.to_f
+    numbers.first.to_i / numbers.last.to_f
   else
     "Please enter a valid operation!"
   end
